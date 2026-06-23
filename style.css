@@ -351,3 +351,68 @@ body{
 .developer-mode .profile-section img{
     border:4px solid #00ff88;
 }
+@media(max-width:768px){
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}   
+.section{
+
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+
+}
+
+.section.show{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+.profile-section img{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
