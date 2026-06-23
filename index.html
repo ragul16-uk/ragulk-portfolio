@@ -62,16 +62,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
             <div class="hero-buttons">
 
-                <a href="./documents/Ragul_K_Resume.pdf"
+                <a href="./documents/Ragul_K_Resume.pdf.pdf"
                    target="_blank"
                    class="btn">
                    <i class="fa-solid fa-eye"></i>
                    View Resume
                 </a>
 
-                <a href="./documents/Ragul_K_Resume.pdf"
-                   download
-                   class="btn btn-outline">
+                <a href="./documents/Ragul_K_Resume.pdf.pdf"
+                   download="Ragul_K_Resume.pdf"
+                   class="btn btn-outline"
+                   id="download-btn">
                    <i class="fa-solid fa-download"></i>
                    Download Resume
                 </a>
@@ -100,22 +101,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <section class="stats">
 
         <div class="stat-card">
-            <h3>7.7</h3>
+            <h3 data-val="7.7" data-suffix="">7.7</h3>
             <p>CGPA</p>
         </div>
 
         <div class="stat-card">
-            <h3>4+</h3>
+            <h3 data-val="4" data-suffix="+">4+</h3>
             <p>Projects</p>
         </div>
 
         <div class="stat-card">
-            <h3>5+</h3>
+            <h3 data-val="5" data-suffix="+">5+</h3>
             <p>Certificates</p>
         </div>
 
         <div class="stat-card">
-            <h3>10+</h3>
+            <h3 data-val="10" data-suffix="+">10+</h3>
             <p>Skills</p>
         </div>
 
@@ -172,18 +173,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <h2>Skills</h2>
 
         <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fa-brands fa-react"></i><span>React</span></div>
+            <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+            <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+            <div class="skill-card"><i class="fa-solid fa-leaf"></i><span>Spring Boot</span></div>
+            <div class="skill-card"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+            <div class="skill-card"><i class="fa-solid fa-robot"></i><span>AI Tools</span></div>
+        </div>
 
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">React</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">Spring Boot</div>
-            <div class="skill-card">Linux</div>
-            <div class="skill-card">AI Tools</div>
-
+        <div class="skill-bars">
+            <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Frontend (HTML/CSS/JS)</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>React</span><span class="skill-pct">70%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Java / Spring Boot</span><span class="skill-pct">75%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Python</span><span class="skill-pct">68%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>MySQL</span><span class="skill-pct">72%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+            </div>
         </div>
 
     </section>
@@ -199,21 +221,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <div class="project-card">
                 <h3>Budget Tracking System</h3>
                 <p>Monitor and manage personal expenses efficiently.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
             </div>
 
             <div class="project-card">
                 <h3>AI Internship Finder</h3>
                 <p>AI-powered internship recommendation platform.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>AI</span><span>React</span>
+                </div>
             </div>
 
             <div class="project-card">
                 <h3>Online PDF Uploader</h3>
                 <p>Upload and manage PDF files online.</p>
+                <div class="project-tags">
+                    <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+                </div>
             </div>
 
             <div class="project-card">
                 <h3>Certificate Generator</h3>
                 <p>Automated certificate generation system.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>HTML</span><span>CSS</span>
+                </div>
             </div>
 
         </div>
@@ -274,6 +308,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </section>
 
 </div>
+
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress"></div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- TOAST -->
+<div id="toast"><i class="fa-solid fa-check-circle"></i> Resume downloaded!</div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particles"></canvas>
 
 <script src="script.js"></script>
 
